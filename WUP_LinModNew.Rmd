@@ -97,9 +97,20 @@ The graph above shows a positive correlation between SIMS and GRIP because all o
 
 ### Numerical results 
 
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+
+GRIP has a smaller correlation with SIMS than ARM does to SIMS. 
 
 ### Inferential  (Build model.2)
+
+```{r}
+model.2 <- lm(SIMS~ARM,data=data)
+summary.lm(model.2)
+```
   
+If we look at the adjusted R-squared value of the GRIP data, it is smaller than the ARM data's adjusted R-squared. In addition, the residual standard error is larger for the GRIP data than it is for the ARM data. Both of these values indicate that Model 1 is doing a better job at explaining our prediction and is a better model overall.
 
 #### predict model.2 at target point
 
