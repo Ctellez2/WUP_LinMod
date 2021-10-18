@@ -77,8 +77,14 @@ predict(model.1, new)
 Using the predict function also gives us the same number, 0.7063836.
 
 #### scatterplot with model fit
-  
 
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
+basicNN + geom_point() + geom_smooth(method=lm)
+```
+
+Here is the best fit line for our data, and we can see that if we look for an x-value of 88 for ARM, it will align with our predictions at a y-value of 0.7.
+  
 ## Model 2 SIM~GRIP
 
 ### Now add in scatterplot
