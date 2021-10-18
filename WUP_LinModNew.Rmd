@@ -89,6 +89,11 @@ Here is the best fit line for our data, and we can see that if we look for an x-
 
 ### Now add in scatterplot
 
+```{r}
+plot(SIMS~GRIP,data=data)
+```
+
+The graph above shows a positive correlation between SIMS and GRIP because all of the data points increase to the right. 
 
 ### Numerical results 
 
